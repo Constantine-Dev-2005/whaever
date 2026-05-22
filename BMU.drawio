@@ -1,5 +1,5 @@
 <mxfile host="Electron" agent="Mozilla/5.0 draw.io/24.7.8" version="24.7.8">
-  <diagram name="БМУ — Структурна схема" id="BMU-struct-01">
+  <diagram name="БМУ — Структурна схема" id="BMU-struct-03">
     <mxGraphModel dx="2333" dy="1380" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="2339" math="0" shadow="0">
       <root>
 
@@ -17,7 +17,7 @@
         <mxCell id="rYKlLN2ti9XnYYLPjGYp-4" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=3;fontFamily=Times New Roman;container=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-3">
           <mxGeometry x="0.02850000000023556" y="0.016500000000291948" width="728.3449999999999" height="216.535" as="geometry" />
         </mxCell>
-        <mxCell id="rYKlLN2ti9XnYYLPjGYp-5" value="КВ-32.БМУ.Д3" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=3;fontSize=18;fontFamily=Times New Roman;container=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-3">
+        <mxCell id="rYKlLN2ti9XnYYLPjGYp-5" value="ІАЛЦ.467400.006 E3" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=3;fontSize=24;fontFamily=Times New Roman;container=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-3">
           <mxGeometry x="255.9385000000001" y="0.016500000000291948" width="472.44" height="59.055" as="geometry" />
         </mxCell>
         <mxCell id="rYKlLN2ti9XnYYLPjGYp-6" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;КПІ ім. Ігоря Сікорського,&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;ФПМ КВ-22&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=3;fontFamily=Times New Roman;fontSize=11;container=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-3">
@@ -230,83 +230,62 @@
         <mxCell id="rYKlLN2ti9XnYYLPjGYp-75" value="Затв." style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=0.5;fontFamily=Times New Roman;container=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-3">
           <mxGeometry y="196.8680000000005" width="66.929" height="19.685" as="geometry" />
         </mxCell>
-        <mxCell id="rYKlLN2ti9XnYYLPjGYp-76" value="КВ-32.БМУ.Д3" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=3;fontSize=14;fontFamily=Times New Roman;container=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;rotation=270;direction=north;textDirection=rtl;verticalAlign=middle;horizontal=0;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+        <mxCell id="rYKlLN2ti9XnYYLPjGYp-76" value="ІАЛЦ.467400.006 E3" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=3;fontSize=14;fontFamily=Times New Roman;container=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;rotation=270;direction=north;textDirection=rtl;verticalAlign=middle;horizontal=0;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
           <mxGeometry x="-1760.0042500000002" y="-1020.0027500000001" width="59.055" height="277.5585" as="geometry" />
         </mxCell>
-              <mxCell id="bmu-title" value="Блок Мікропрограмного Управління (БМУ) — Курсовий проект КВ-32" style="text;html=1;align=center;verticalAlign=middle;resizable=0;autosize=1;fontFamily=Times New Roman;fontSize=12;fontStyle=1;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
-          <mxGeometry x="-1700" y="-1000" width="2600" height="70" as="geometry" />
+              <mxCell id="bmu-ttl" value="Структурна схема БМУ (Блок Мікропрограмного Управління)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry x="-1780" y="-860" width="2330" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="bmu-fam" value="К1804ВУ4&#xa;ФАМ — Формувач Адреси Мікрокоманд&#xa;&#xa;Вхід: D[8:0] — поч. адреса (КОП)&#xa;Вхід: CC — умова (знак АЛП)&#xa;Вхід: CLK&#xa;Вихід: Y[8:0] — адреса МПП&#xa;Вихід: CT (лічильник циклів, init=32)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontFamily=Times New Roman;fontSize=11;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
-          <mxGeometry x="-700" y="-600" width="380" height="280" as="geometry" />
+        <mxCell id="bmu-kop" value="Регістр КОП&amp;#xA;(Код Операції)&amp;#xA;A[8:0]" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry x="-1700" y="-600" width="200" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="bmu-mpp" value="КР556РТ6&#xa;Мікропрограмна Пам'ять (МПП)&#xa;512 слів × 56 біт&#xa;&#xa;Вхід: A[8:0] — адреса (9 біт)&#xa;Вхід: OE — дозвіл виходу&#xa;Вихід: D[55:0] — мікрокоманда&#xa;   I[8:0]: код операції АЛП&#xa;   I[5:3]: джерело операндів&#xa;   I[8:6]: призначення/зсув" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontFamily=Times New Roman;fontSize=11;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
-          <mxGeometry x="-700" y="-180" width="380" height="300" as="geometry" />
+        <mxCell id="bmu-fam" value="К1804ВУ4&amp;#xA;ФАМ&amp;#xA;Формувач Адреси&amp;#xA;Мікрокоманд&amp;#xA;&amp;#xA;Вхід: D[8:0] CC CLK&amp;#xA;Вихід: Y[8:0] CT" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry x="-1300" y="-700" width="400" height="320" as="geometry" />
         </mxCell>
-        <mxCell id="bmu-ccmux" value="Мультиплексор умов&#xa;CC-MUX&#xa;&#xa;Вхід: R₀[31] — знак АЛП&#xa;(біт 31 від БОД)&#xa;Вихід: CC → К1804ВУ4" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;fontFamily=Times New Roman;fontSize=11;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
-          <mxGeometry x="100" y="-600" width="260" height="180" as="geometry" />
+        <mxCell id="bmu-mpp" value="КР556РТ6&amp;#xA;МПП 512x56 біт&amp;#xA;&amp;#xA;A[8:0] -&gt; D[55:0]&amp;#xA;Поля: I[8:0]" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry x="-1300" y="-250" width="400" height="280" as="geometry" />
         </mxCell>
-        <mxCell id="bmu-ctr" value="Лічильник циклів ділення&#xa;(вбудований у К1804ВУ4)&#xa;&#xa;Ініціалізація: 32&#xa;(8 секцій × 4 біти)&#xa;Декремент кожного циклу&#xa;→ перевірка CT≠0 на кроці 05H" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;fontFamily=Times New Roman;fontSize=11;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
-          <mxGeometry x="100" y="-320" width="260" height="200" as="geometry" />
+        <mxCell id="bmu-ccmux" value="Мультиплексор&amp;#xA;умов CC&amp;#xA;R0[31] -&gt; CC" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry x="-600" y="-700" width="200" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="bmu-kop" value="Регістр КОП&#xa;(Код Операції)&#xa;&#xa;Початкова адреса&#xa;мікропрограми → D[8:0]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;fontFamily=Times New Roman;fontSize=11;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
-          <mxGeometry x="-1300" y="-600" width="220" height="130" as="geometry" />
+        <mxCell id="bmu-ctr" value="Лічильник&amp;#xA;циклів ділення&amp;#xA;init=32&amp;#xA;CT=0 -&gt; завершити" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry x="-600" y="-480" width="200" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="bmu-clk" value="Генератор CLK&#xa;(спільний з БОД)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;fontFamily=Times New Roman;fontSize=11;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
-          <mxGeometry x="-1300" y="-380" width="220" height="80" as="geometry" />
+        <mxCell id="bmu-mcmd" value="Шина мікрокоманди D[55:0]&amp;#xA;-&gt; I[8:0] до БОД" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry x="-1300" y="100" width="400" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="bmu-mcmd" value="Шина мікрокоманди D[55:0]&#xa;→ до БОД: поле I[8:0]&#xa;→ керування ALU, зсув, адреса РЗП" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontFamily=Times New Roman;fontSize=11;fillColor=#e8f4e8;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
-          <mxGeometry x="-700" y="220" width="380" height="100" as="geometry" />
+        <mxCell id="bmu-sign" value="Знак R0[31]&amp;#xA;(з БОД, Bit 31)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry x="-600" y="-900" width="200" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="bmu-sign" value="Знак R₀[31] від БОД&#xa;(Bit 31 АЛП, знак остачі)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;fontFamily=Times New Roman;fontSize=11;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
-          <mxGeometry x="100" y="-820" width="260" height="80" as="geometry" />
+        <mxCell id="bmu-clk" value="CLK" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry x="-1700" y="-400" width="100" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="bmu-kop-fam" value="D[8:0] поч.адреса" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;fontFamily=Times New Roman;fontSize=10;endArrow=block;endFill=1;strokeColor=#6600CC;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-1080" y="-530" as="sourcePoint" />
-            <mxPoint x="-700" y="-530" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="bmu-flow" value="Мікропрограма ділення:&amp;#xA;00H -&gt; 01H : Ініціалізація&amp;#xA;01H -&gt; 02H : Знак операндів&amp;#xA;02H -&gt; 03H : Цикл зсуву&amp;#xA;03H/04H -&gt; 05H : АЛП + CC&amp;#xA;05H -&gt; 02H (CT!=0) | 06H (CT=0)&amp;#xA;06H : Фіналізація" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry x="-200" y="-700" width="520" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="bmu-clk-fam" value="CLK" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;fontFamily=Times New Roman;fontSize=10;endArrow=block;endFill=1;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-1080" y="-340" as="sourcePoint" />
-            <mxPoint x="-700" y="-460" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="bmu-kop-fam" value="/ 9 D[8:0]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;startArrow=none;startFill=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" source="bmu-kop" target="bmu-fam" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="bmu-addr" value="A[8:0] адреса МПП" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=4;fontFamily=Times New Roman;fontSize=11;endArrow=block;startArrow=block;startFill=1;endFill=1;strokeColor=#0000AA;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-510" y="-320" as="sourcePoint" />
-            <mxPoint x="-510" y="-180" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="bmu-clk-fam" value="CLK" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;startArrow=none;startFill=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" source="bmu-clk" target="bmu-fam" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="bmu-mpp-mcmd" value="D[55:0] мікрокоманда" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=4;fontFamily=Times New Roman;fontSize=11;endArrow=block;startArrow=block;startFill=1;endFill=1;strokeColor=#007700;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-510" y="120" as="sourcePoint" />
-            <mxPoint x="-510" y="220" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="bmu-fam-mpp" value="/ 9 A[8:0]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;startArrow=none;startFill=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="bmu-fam" target="bmu-mpp" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="bmu-cc-fam" value="CC умова" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;fontFamily=Times New Roman;fontSize=10;endArrow=block;endFill=1;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="100" y="-510" as="sourcePoint" />
-            <mxPoint x="-320" y="-510" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="bmu-mpp-mcmd" value="/ 56 D[55:0]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;startArrow=classic;startFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="bmu-mpp" target="bmu-mcmd" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="bmu-sign-mux" value="R₀[31] знак" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;fontFamily=Times New Roman;fontSize=10;endArrow=block;endFill=1;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="230" y="-740" as="sourcePoint" />
-            <mxPoint x="230" y="-600" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="bmu-sign-mux" value="R0[31]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;startArrow=none;startFill=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="bmu-sign" target="bmu-ccmux" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="bmu-fam-ctr" value="CT (лічильник)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;fontFamily=Times New Roman;fontSize=10;endArrow=block;endFill=1;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-320" y="-400" as="sourcePoint" />
-            <mxPoint x="100" y="-220" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="bmu-cc-fam" value="CC" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;startArrow=none;startFill=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" source="bmu-ccmux" target="bmu-fam" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="bmu-table" value="Мікропрограма ділення (таблиця 7.1):&#xa;00H → 01H : Початок, ініціалізація&#xa;01H → 02H : Розрахунок знаку (XOR умов)&#xa;02H → 03H : Старт циклу зсуву/ділення&#xa;03H/04H → 05H : Арифметика + перехід за CC&#xa;05H → 02H (CT≠0) або → 06H (CT=0)&#xa;06H : Фіналізація частки/остачі" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;fontFamily=Times New Roman;fontSize=11;align=left;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
-          <mxGeometry x="-1700" y="-820" width="500" height="200" as="geometry" />
+        <mxCell id="bmu-fam-ctr" value="CT" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;startArrow=none;startFill=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="bmu-fam" target="bmu-ctr" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="bmu-legend" value="Позначення:&#xa;━━ Синя (шир.4): шина адреси A[8:0] (ФАМ → МПП)&#xa;━━ Зелена (шир.4): шина мікрокоманди D[55:0]&#xa;——— Фіолетова: початкова адреса КОП → D[8:0]&#xa;——— Сигнал CC: умова знаку з БОД&#xa;——— CLK: синхронізація&#xa;К1804ВУ4: ФАМ; КР556РТ6: МПП 512×56" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;fontFamily=Times New Roman;fontSize=11;align=left;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
-          <mxGeometry x="-1700" y="380" width="900" height="180" as="geometry" />
+        <mxCell id="bmu-legend" value="/ N — шина N біт; &amp;#x25C4;&amp;#x25BA; двоспрямована; &amp;#x25BA; однонаправлений сигнал" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry x="-1780" y="230" width="2330" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
