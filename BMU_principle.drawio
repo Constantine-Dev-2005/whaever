@@ -239,17 +239,17 @@
         <mxCell id="bmu-kop" value="RG1 Регістр КОП&amp;#xA;(Код операції)&amp;#xA;Q[8:0] → D[8:0]" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
           <mxGeometry x="-1700" y="-600" width="200" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="bmu-fam" value="DD1 К1804ВУ4 (ФАМ)&amp;#xA;Формувач адреси мікрокоманд&amp;#xA;Входи: D[8:0], CC, CLK&amp;#xA;Виходи: Y[8:0], CT, MAP" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
-          <mxGeometry x="-1300" y="-700" width="400" height="320" as="geometry" />
+        <mxCell id="bmu-fam" value="DD1 К1804ВУ4 (ФАМ) — DIP-40&amp;#xA;Формувач адреси мікрокоманд (Am2910-аналог)&amp;#xA;─────────────────────────────&amp;#xA;Вхід КОП: I[3:0](1–4) ←D[8:0] від RG1&amp;#xA;Прямий вхід: D[8:0](9–17) ← КОП/константа&amp;#xA;Умова: CC(19) ←MUX, /CCEN(18)&amp;#xA;Тактування: CP(21) ←CLK&amp;#xA;Скидання: /R(22) →+5В ↑R1(4.7кОм)&amp;#xA;Лічильник: /CI(34)→+5В↑R2(4.7кОм), CO(33)→DD4&amp;#xA;Стек: /FULL(35)→+5В↑R3(4.7кОм)&amp;#xA;Розгалуження: /MAP(6)→GND, /VECT(7)→+5В↑R4, /PL(8)&amp;#xA;Рег.завант.: RLD(5) ←зовн.керув.&amp;#xA;─────────────────────────────&amp;#xA;Вихід адреси: Y[8:0](24–32) →DD2-DD8 A[8:0]&amp;#xA;Управл.вих.: /OE(23)→GND (постійно ввімкн.)&amp;#xA;─────────────────────────────&amp;#xA;Живлення: VCC(40)=+5В, GND(20)&amp;#xA;Розв'язка: C1=100нФ між VCC(40)–GND(20)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry x="-1300" y="-700" width="480" height="380" as="geometry" />
         </mxCell>
-        <mxCell id="bmu-mpp" value="DD2 КР556РТ6 (МПП)&amp;#xA;512×56 біт&amp;#xA;A[8:0] → D[55:0]&amp;#xA;Поля: I[8:0], SH[2:0], CTL" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
-          <mxGeometry x="-1300" y="-250" width="400" height="280" as="geometry" />
+        <mxCell id="bmu-mpp" value="DD2–DD8: 7 × КР556РТ6 (МПП) — DIP-24 кожна&amp;#xA;Мікропрограмна пам'ять: 512 слів × 56 біт&amp;#xA;─────────────────────────────&amp;#xA;Адресний вхід: A[8:0](1–9) ← DD1 Y[8:0]&amp;#xA;Вибір мікросхеми: /CE(10)→GND (завжди акт.)&amp;#xA;Дозвіл виходу: /OE(11)→+5В↑R5(1кОм) або GND&amp;#xA;─────────────────────────────&amp;#xA;Вихід даних O[7:0]:&amp;#xA;  DD2: O[7:0] → шина мікрокоманди [7:0]&amp;#xA;  DD3: O[7:0] → шина мікрокоманди [15:8]&amp;#xA;  DD4: O[7:0] → I[8:1] до DD1 та БОД&amp;#xA;  DD5: O[7:0] → SH[2:0]+CTL[4:0] до БОД&amp;#xA;  DD6-DD8: O[7:0] → поля керув.мікрооперацій&amp;#xA;─────────────────────────────&amp;#xA;Живлення: VCC(24)=+5В, GND(12)&amp;#xA;Розв'язка: C2–C8=100нФ (по одній на мікросхему)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry x="-1300" y="-250" width="480" height="380" as="geometry" />
         </mxCell>
-        <mxCell id="bmu-ccmux" value="DD3 Мультиплексор умов CC&amp;#xA;(логіка переходів)&amp;#xA;R0[31] → CC" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
-          <mxGeometry x="-600" y="-700" width="200" height="160" as="geometry" />
+        <mxCell id="bmu-ccmux" value="DD9 К155КП1 (MUX умов CC)&amp;#xA;16→1 мультиплексор (або К1533КП2)&amp;#xA;─────────────────────────────&amp;#xA;Входи даних D[15:0](1–16):&amp;#xA;  D0←R0[31] (знаковий біт)&amp;#xA;  D1←OVR (переповнення)&amp;#xA;  D2←Cn+4 (перенос)&amp;#xA;  D3–D15←GND або інші умови&amp;#xA;Вибір каналу: S[3:0] ←поле SH[2:0] мікрокоманди&amp;#xA;Вихід: Z(17) → CC вх. DD1(К1804ВУ4)&amp;#xA;─────────────────────────────&amp;#xA;VCC(16)=+5В, GND(8)&amp;#xA;C9=100нФ розв'язка" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry x="-600" y="-700" width="280" height="260" as="geometry" />
         </mxCell>
-        <mxCell id="bmu-ctr" value="DD4 Лічильник циклів&amp;#xA;ділення (init=32)&amp;#xA;CT=0 → завершити" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
-          <mxGeometry x="-600" y="-480" width="200" height="160" as="geometry" />
+        <mxCell id="bmu-ctr" value="DD10 К1533ИЕ7 (Лічильник циклів ділення)&amp;#xA;16-розрядний лічильник / 4×К1533ИЕ7 4-біт&amp;#xA;─────────────────────────────&amp;#xA;Завантаження: /LD(9)←мікрокоманда, D[3:0](3–6)←32&amp;#xA;Тактування: CP(2)←CLK&amp;#xA;Дозвіл рахунку: /CEP(7), /CET(10)←керування&amp;#xA;Вихід переносу: /TC(15)→DD1 /CI (ознака CT=0)&amp;#xA;─────────────────────────────&amp;#xA;VCC(16)=+5В, GND(8)&amp;#xA;C10=100нФ розв'язка" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry x="-600" y="-370" width="280" height="240" as="geometry" />
         </mxCell>
         <mxCell id="bmu-mcmd" value="Шина мікрокоманди D[55:0]&amp;#xA;→ I[8:0], SH[2:0] до БОД" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
           <mxGeometry x="-1300" y="100" width="400" height="80" as="geometry" />
@@ -284,8 +284,49 @@
         <mxCell id="bmu-fam-ctr" value="CT" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;startArrow=none;startFill=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="bmu-fam" target="bmu-ctr" parent="rYKlLN2ti9XnYYLPjGYp-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="bmu-legend" value="Позначення: /N — шина N біт; ◄► двоспрям.; ► однонапрям. Оформлення згідно ЄСКД: ДСТУ ГОСТ 2.701, ДСТУ ГОСТ 2.702." style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
-          <mxGeometry x="-1780" y="230" width="2330" height="40" as="geometry" />
+        <mxCell id="bmu-legend" value="Позначення: /N — шина N біт; ◄► двоспрям.; ► однонапрям. Оформлення згідно ЄСКД: ДСТУ ГОСТ 2.701, ДСТУ ГОСТ 2.702.  |  Елементи: DD1=К1804ВУ4, DD2-DD8=КР556РТ6, DD9=К155КП1, DD10=К1533ИЕ7, C1-C10=100нФ, C11=10мкФ, R1-R5=4.7кОм (до +5В), XP1=живлення" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry x="-1780" y="230" width="2700" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- === РЕЙКИ ЖИВЛЕННЯ === -->
+        <mxCell id="bmu-vcc-rail" value="+5В VCC" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=13;strokeColor=#FF0000;fillColor=#FFE6E6;fontColor=#CC0000;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry x="-1780" y="-970" width="2700" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="bmu-gnd-rail" value="GND (0В)" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=13;strokeColor=#0000FF;fillColor=#E6E6FF;fontColor=#0000CC;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry x="-1780" y="285" width="2700" height="28" as="geometry" />
+        </mxCell>
+
+        <!-- === ШИНА CLK === -->
+        <mxCell id="bmu-clk-bus" value="CLK (спільна для DD1, DD10, RG1)" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=11;strokeColor=#007700;fillColor=#E6FFE6;fontColor=#005500;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry x="-1780" y="-938" width="2700" height="22" as="geometry" />
+        </mxCell>
+
+        <!-- === МІКРОПРОГРАМНА АДРЕСНА ШИНА MA[8:0] === -->
+        <mxCell id="bmu-ma-label" value="MA[8:0] — 9-бітна адреса мікропрограми (DD1 Y[8:0] → DD2-DD8 A[8:0])" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=2;fontSize=11;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry x="-1300" y="150" width="480" height="28" as="geometry" />
+        </mxCell>
+
+        <!-- === БЛОК ПАСИВНИХ КОМПОНЕНТІВ === -->
+        <mxCell id="bmu-passives" value="ПАСИВНІ КОМПОНЕНТИ БМУ&amp;#xA;─────────────────────────────&amp;#xA;Розв'язувальні конденсатори (100нФ, 50В, X7R):&amp;#xA;  C1 — DD1 VCC(40)–GND(20)&amp;#xA;  C2 — DD2 VCC(24)–GND(12)&amp;#xA;  C3 — DD3 VCC(24)–GND(12)&amp;#xA;  C4 — DD4 VCC(24)–GND(12)&amp;#xA;  C5 — DD5 VCC(24)–GND(12)&amp;#xA;  C6 — DD6 VCC(24)–GND(12)&amp;#xA;  C7 — DD7 VCC(24)–GND(12)&amp;#xA;  C8 — DD8 VCC(24)–GND(12)&amp;#xA;  C9 — DD9 VCC(16)–GND(8)&amp;#xA;  C10 — DD10 VCC(16)–GND(8)&amp;#xA;  C11 — 10мкФ/16В (груповий по +5В шині)&amp;#xA;─────────────────────────────&amp;#xA;Підтягувальні резистори (+5В, 0.25Вт):&amp;#xA;  R1=4.7кОм — DD1 /R(22) до VCC&amp;#xA;  R2=4.7кОм — DD1 /CI(34) до VCC&amp;#xA;  R3=4.7кОм — DD1 /FULL(35) до VCC&amp;#xA;  R4=4.7кОм — DD1 /VECT(7) до VCC&amp;#xA;  R5=1кОм — DD2-DD8 /OE(11) до VCC&amp;#xA;─────────────────────────────&amp;#xA;XP1 — роз'єм живлення +5В/GND (2-конт.)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#FFF9C4;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry x="340" y="-700" width="380" height="560" as="geometry" />
+        </mxCell>
+
+        <!-- === БЛОК ЧАСОВИХ ПАРАМЕТРІВ === -->
+        <mxCell id="bmu-timing" value="ЧАСОВІ ПАРАМЕТРИ БМУ&amp;#xA;─────────────────────────────&amp;#xA;К1804ВУ4 (Am2910):&amp;#xA;  t_pd (Y→output) = 35 нс&amp;#xA;  t_setup (D,CC→CP↑) = 15 нс&amp;#xA;  t_hold = 5 нс&amp;#xA;─────────────────────────────&amp;#xA;КР556РТ6 (PROM 512×8):&amp;#xA;  t_access (A→O) = 40 нс&amp;#xA;  t_ce (CE→O) = 40 нс&amp;#xA;─────────────────────────────&amp;#xA;T_min = t_pd(FAM) + t_acc(PROM) + t_setup&amp;#xA;       = 35 + 40 + 15 = 90 нс&amp;#xA;f_max = 1/90нс ≈ 11 МГц&amp;#xA;Обрана частота: f_CLK = 5 МГц (T=200нс)&amp;#xA;Запас часу: 200 - 90 = 110 нс" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#E8F4FD;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry x="340" y="-120" width="380" height="320" as="geometry" />
+        </mxCell>
+
+        <!-- === ПРОВІД CLK до DD1 === -->
+        <mxCell id="bmu-clkbus-fam" value="CLK" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;startArrow=none;startFill=0;strokeColor=#007700;" edge="1" source="bmu-clk" target="bmu-fam" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- === ПРОВІД CLK до DD10 === -->
+        <mxCell id="bmu-clkbus-ctr" value="CLK" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;startArrow=none;startFill=0;strokeColor=#007700;" edge="1" source="bmu-clk" target="bmu-ctr" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- === ШИНА МІКРОКОМАНДИ → БОД === -->
+        <mxCell id="bmu-mcmd-bod" value="/ 9  I[8:0] → БОД" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;startArrow=none;startFill=0;" edge="1" source="bmu-mcmd" target="bmu-flow" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

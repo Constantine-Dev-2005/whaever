@@ -236,23 +236,23 @@
               <mxCell id="mem-ttl" value="Структурна схема підсистеми пам'яті (ОЗП/ПЗП)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
           <mxGeometry x="-1780" y="-860" width="2330" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="mem-cpu" value="Процесор КВ-32&amp;#xA;A[15:0] D[31:0]&amp;#xA;WR / RD / MREQ" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
-          <mxGeometry x="-1700" y="-500" width="280" height="160" as="geometry" />
+        <mxCell id="mem-cpu" value="Процесор КВ-32&amp;#xA;─────────────────────────────&amp;#xA;Адресна шина: A[15:0] (вихід)&amp;#xA;  A[15:13] → К1533ИД7 (декодування CS)&amp;#xA;  A[12:0]  → ПЗП A[12:0]&amp;#xA;  A[10:0]  → ОЗП A[10:0]&amp;#xA;Шина даних: D[31:0] (двоспрямована)&amp;#xA;─────────────────────────────&amp;#xA;Керуючі сигнали:&amp;#xA;  /WR (зап., акт.LOW) → /WE ОЗП&amp;#xA;  /RD (чит., акт.LOW) → /OE ОЗП+ПЗП&amp;#xA;  /MREQ (запит пам'яті) → G1 дешифр." style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry x="-1700" y="-600" width="360" height="320" as="geometry" />
         </mxCell>
-        <mxCell id="mem-dec" value="К1533ИД7&amp;#xA;Дешифратор адреси&amp;#xA;Вхід: A[15:13]&amp;#xA;Вихід: CS0...CS3" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
-          <mxGeometry x="-1200" y="-500" width="240" height="160" as="geometry" />
+        <mxCell id="mem-dec" value="DD1 К1533ИД7 — DIP-16&amp;#xA;Дешифратор адреси 3→8 (аналог 74LS138)&amp;#xA;─────────────────────────────&amp;#xA;Адресні входи: A(1), B(2), C(3) ← A[13–15]&amp;#xA;Дозвіл: /G2A(4)→GND, /G2B(5)→GND, G1(6)→+5В&amp;#xA;─────────────────────────────&amp;#xA;Виходи (активний рівень LOW):&amp;#xA;  /Y0(15) → /CS0 → ОЗП Банк1 (A[15:13]=000)&amp;#xA;  /Y1(14) → /CS1 → ОЗП Банк2 (A[15:13]=001)&amp;#xA;  /Y2(13) → /CS2 → ПЗП Банк1 (A[15:13]=010)&amp;#xA;  /Y3(12) → /CS3 → ПЗП Банк2 (A[15:13]=011)&amp;#xA;  /Y4–/Y7(11–8) → NC або резерв&amp;#xA;─────────────────────────────&amp;#xA;VCC(16)=+5В, GND(8)&amp;#xA;C1=100нФ розв'язка" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry x="-1200" y="-500" width="320" height="380" as="geometry" />
         </mxCell>
-        <mxCell id="mem-ram1" value="ОЗП Банк 1&amp;#xA;4 x К537РУ8&amp;#xA;2Кx8 = 2Кx32 біт&amp;#xA;D[15:0] A[10:0] CS0" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
-          <mxGeometry x="-700" y="-700" width="320" height="200" as="geometry" />
+        <mxCell id="mem-ram1" value="ОЗП Банк 1: 4 × К537РУ8 — DIP-24 кожна&amp;#xA;Статична SRAM 2К×8, підсумок 2К×32 біт&amp;#xA;─────────────────────────────&amp;#xA;Адресний вхід: A[10:0](1–11) ← шина A[10:0]&amp;#xA;Вибір: /CS(18)← /CS0 від К1533ИД7&amp;#xA;Запис: /WE(21) ← /WR від процесора&amp;#xA;Читання: /OE(22)→+5В↑R1(1кОм), знімається при /RD&amp;#xA;─────────────────────────────&amp;#xA;Шина даних (двоспрямована):&amp;#xA;  К537РУ8 №1: D[7:0](13–20) ↔ DB[7:0]&amp;#xA;  К537РУ8 №2: D[7:0](13–20) ↔ DB[15:8]&amp;#xA;  К537РУ8 №3: D[7:0](13–20) ↔ DB[23:16]&amp;#xA;  К537РУ8 №4: D[7:0](13–20) ↔ DB[31:24]&amp;#xA;─────────────────────────────&amp;#xA;VCC(24)=+5В, GND(12) (4 мікросхеми)&amp;#xA;C2–C5=100нФ розв'язка (по одній)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry x="-700" y="-700" width="400" height="400" as="geometry" />
         </mxCell>
-        <mxCell id="mem-ram2" value="ОЗП Банк 2&amp;#xA;4 x К537РУ8&amp;#xA;2Кx8 = 2Кx32 біт&amp;#xA;D[31:16] A[10:0] CS1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
-          <mxGeometry x="-700" y="-400" width="320" height="200" as="geometry" />
+        <mxCell id="mem-ram2" value="ОЗП Банк 2: 4 × К537РУ8 — DIP-24 кожна&amp;#xA;Статична SRAM 2К×8, підсумок 2К×32 біт (верхня половина адрес)&amp;#xA;─────────────────────────────&amp;#xA;Адресний вхід: A[10:0](1–11) ← шина A[10:0]&amp;#xA;Вибір: /CS(18)← /CS1 від К1533ИД7&amp;#xA;Запис: /WE(21) ← /WR від процесора&amp;#xA;Читання: /OE(22)→+5В↑R2(1кОм), знімається при /RD&amp;#xA;─────────────────────────────&amp;#xA;Шина даних (двоспрямована):&amp;#xA;  К537РУ8 №5: D[7:0](13–20) ↔ DB[7:0]&amp;#xA;  К537РУ8 №6: D[7:0](13–20) ↔ DB[15:8]&amp;#xA;  К537РУ8 №7: D[7:0](13–20) ↔ DB[23:16]&amp;#xA;  К537РУ8 №8: D[7:0](13–20) ↔ DB[31:24]&amp;#xA;─────────────────────────────&amp;#xA;VCC(24)=+5В, GND(12) (4 мікросхеми)&amp;#xA;C6–C9=100нФ розв'язка (по одній)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry x="-700" y="-220" width="400" height="400" as="geometry" />
         </mxCell>
-        <mxCell id="mem-rom1" value="ПЗП Банк 1&amp;#xA;4 x К596РЕ1&amp;#xA;8Кx8 = 8Кx32 біт&amp;#xA;D[15:0] A[12:0] CS2" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
-          <mxGeometry x="-200" y="-700" width="320" height="200" as="geometry" />
+        <mxCell id="mem-rom1" value="ПЗП Банк 1: 4 × К596РЕ1 — DIP-28 кожна&amp;#xA;EPROM 8К×8, підсумок 8К×32 біт&amp;#xA;─────────────────────────────&amp;#xA;Адресний вхід: A[12:0](1–13) ← шина A[12:0]&amp;#xA;Вибір: /CE(20)← /CS2 від К1533ИД7&amp;#xA;Дозвіл виходу: /OE(22)→+5В↑R3(1кОм), знімається при /RD&amp;#xA;─────────────────────────────&amp;#xA;Шина даних (тільки читання):&amp;#xA;  К596РЕ1 №1: O[7:0](11–19) → DB[7:0]&amp;#xA;  К596РЕ1 №2: O[7:0](11–19) → DB[15:8]&amp;#xA;  К596РЕ1 №3: O[7:0](11–19) → DB[23:16]&amp;#xA;  К596РЕ1 №4: O[7:0](11–19) → DB[31:24]&amp;#xA;─────────────────────────────&amp;#xA;VCC(28)=+5В, GND(14) (4 мікросхеми)&amp;#xA;C10–C13=100нФ розв'язка (по одній)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry x="-200" y="-700" width="400" height="400" as="geometry" />
         </mxCell>
-        <mxCell id="mem-rom2" value="ПЗП Банк 2&amp;#xA;4 x К596РЕ1&amp;#xA;8Кx8 = 8Кx32 біт&amp;#xA;D[31:16] A[12:0] CS3" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
-          <mxGeometry x="-200" y="-400" width="320" height="200" as="geometry" />
+        <mxCell id="mem-rom2" value="ПЗП Банк 2: 4 × К596РЕ1 — DIP-28 кожна&amp;#xA;EPROM 8К×8, підсумок 8К×32 біт (верхня половина адрес ПЗП)&amp;#xA;─────────────────────────────&amp;#xA;Адресний вхід: A[12:0](1–13) ← шина A[12:0]&amp;#xA;Вибір: /CE(20)← /CS3 від К1533ИД7&amp;#xA;Дозвіл виходу: /OE(22)→+5В↑R4(1кОм), знімається при /RD&amp;#xA;─────────────────────────────&amp;#xA;Шина даних (тільки читання):&amp;#xA;  К596РЕ1 №5: O[7:0](11–19) → DB[7:0]&amp;#xA;  К596РЕ1 №6: O[7:0](11–19) → DB[15:8]&amp;#xA;  К596РЕ1 №7: O[7:0](11–19) → DB[23:16]&amp;#xA;  К596РЕ1 №8: O[7:0](11–19) → DB[31:24]&amp;#xA;─────────────────────────────&amp;#xA;VCC(28)=+5В, GND(14) (4 мікросхеми)&amp;#xA;C14–C17=100нФ розв'язка (по одній)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry x="-200" y="-220" width="400" height="400" as="geometry" />
         </mxCell>
         <mxCell id="mem-dbus" value="Шина даних D[31:0] (32-розрядна, двоспрямована)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
           <mxGeometry x="-1700" y="100" width="1950" height="50" as="geometry" />
@@ -308,8 +308,34 @@
         <mxCell id="mem-rom2-dbus" value="/ 16 D[31:16]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;startArrow=classic;startFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.7;entryY=0;entryDx=0;entryDy=0;" edge="1" source="mem-rom2" target="mem-dbus" parent="rYKlLN2ti9XnYYLPjGYp-1">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="mem-legend" value="К537РУ8: static SRAM 2Кx8; К596РЕ1: ROM 8Кx8; К1533ИД7: 3-&gt;8 decoder;  / N - шина N біт" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
-          <mxGeometry x="-1780" y="210" width="2330" height="40" as="geometry" />
+        <mxCell id="mem-legend" value="К537РУ8: SRAM 2Кx8 DIP-24 (t_acc=120нс); К596РЕ1: EPROM 8Кx8 DIP-28 (t_acc=200нс); К1533ИД7: 3→8 decoder DIP-16; / N - шина N біт; ◄► двоспрям.; ► однонапрям.  |  Оформлення: ДСТУ ГОСТ 2.701, ДСТУ ГОСТ 2.702" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry x="-1780" y="210" width="2700" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- === РЕЙКИ ЖИВЛЕННЯ === -->
+        <mxCell id="mem-vcc-rail" value="+5В VCC" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=13;strokeColor=#FF0000;fillColor=#FFE6E6;fontColor=#CC0000;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry x="-1780" y="-880" width="2700" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="mem-gnd-rail" value="GND (0В)" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=13;strokeColor=#0000FF;fillColor=#E6E6FF;fontColor=#0000CC;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry x="-1780" y="265" width="2700" height="28" as="geometry" />
+        </mxCell>
+
+        <!-- === ШИНА /WR та /RD === -->
+        <mxCell id="mem-wr-bus" value="/WR → /WE ОЗП Банк1,2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;startArrow=none;startFill=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" source="mem-cpu" target="mem-ram1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mem-rd-bus" value="/RD → /OE ОЗП+ПЗП" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;startArrow=none;startFill=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" source="mem-cpu" target="mem-rom1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- === БЛОК ПАСИВНИХ КОМПОНЕНТІВ === -->
+        <mxCell id="mem-passives" value="ПАСИВНІ КОМПОНЕНТИ КПМ&amp;#xA;─────────────────────────────&amp;#xA;Розв'язувальні конденсатори (100нФ, 50В, X7R):&amp;#xA;  C1  — DD1 К1533ИД7 VCC(16)–GND(8)&amp;#xA;  C2  — К537РУ8 №1 VCC(24)–GND(12) [Б1]&amp;#xA;  C3  — К537РУ8 №2 VCC(24)–GND(12) [Б1]&amp;#xA;  C4  — К537РУ8 №3 VCC(24)–GND(12) [Б1]&amp;#xA;  C5  — К537РУ8 №4 VCC(24)–GND(12) [Б1]&amp;#xA;  C6  — К537РУ8 №5 VCC(24)–GND(12) [Б2]&amp;#xA;  C7  — К537РУ8 №6 VCC(24)–GND(12) [Б2]&amp;#xA;  C8  — К537РУ8 №7 VCC(24)–GND(12) [Б2]&amp;#xA;  C9  — К537РУ8 №8 VCC(24)–GND(12) [Б2]&amp;#xA;  C10 — К596РЕ1 №1 VCC(28)–GND(14) [Б3]&amp;#xA;  C11 — К596РЕ1 №2 VCC(28)–GND(14) [Б3]&amp;#xA;  C12 — К596РЕ1 №3 VCC(28)–GND(14) [Б3]&amp;#xA;  C13 — К596РЕ1 №4 VCC(28)–GND(14) [Б3]&amp;#xA;  C14 — К596РЕ1 №5 VCC(28)–GND(14) [Б4]&amp;#xA;  C15 — К596РЕ1 №6 VCC(28)–GND(14) [Б4]&amp;#xA;  C16 — К596РЕ1 №7 VCC(28)–GND(14) [Б4]&amp;#xA;  C17 — К596РЕ1 №8 VCC(28)–GND(14) [Б4]&amp;#xA;  C18 — 10мкФ/16В (груповий по +5В шині)&amp;#xA;─────────────────────────────&amp;#xA;Підтягувальні резистори (+5В, 0.25Вт, 1кОм):&amp;#xA;  R1 — /OE ОЗП Банк1 (4×К537РУ8 паралельно)&amp;#xA;  R2 — /OE ОЗП Банк2 (4×К537РУ8 паралельно)&amp;#xA;  R3 — /OE ПЗП Банк1 (4×К596РЕ1 паралельно)&amp;#xA;  R4 — /OE ПЗП Банк2 (4×К596РЕ1 паралельно)&amp;#xA;─────────────────────────────&amp;#xA;XP1 — роз'єм живлення +5В/GND (2-конт.)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#FFF9C4;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry x="360" y="-700" width="400" height="780" as="geometry" />
+        </mxCell>
+
+        <!-- === ЧАСОВІ ПАРАМЕТРИ === -->
+        <mxCell id="mem-timing" value="ЧАСОВІ ПАРАМЕТРИ КПМ&amp;#xA;─────────────────────────────&amp;#xA;К537РУ8 (SRAM):&amp;#xA;  t_acc (A→D) = 120 нс (max)&amp;#xA;  t_ce (/CS→D) = 120 нс&amp;#xA;  t_wr (запис) = 70 нс (min WE LOW)&amp;#xA;─────────────────────────────&amp;#xA;К596РЕ1 (EPROM):&amp;#xA;  t_acc (A→O) = 200 нс (max)&amp;#xA;  t_ce (/CE→O) = 200 нс&amp;#xA;─────────────────────────────&amp;#xA;Процесор КВ-32: f_CLK=5МГц, T=200нс&amp;#xA;Цикл читання ОЗП: 1 такт (200нс &gt; 120нс ✓)&amp;#xA;Цикл читання ПЗП: 2 такти (400нс &gt; 200нс ✓)&amp;#xA;  → 1 такт очікування (WAIT) для ПЗП&amp;#xA;─────────────────────────────&amp;#xA;Ємність ОЗП: 2×2К×32 = 16 КБ&amp;#xA;Ємність ПЗП: 2×8К×32 = 64 КБ" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#E8F4FD;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry x="360" y="100" width="400" height="380" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
