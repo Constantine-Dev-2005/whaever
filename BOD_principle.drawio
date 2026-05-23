@@ -236,28 +236,28 @@
               <mxCell id="bod-ttl" value="БОД. Схема електрична принципова (32-розрядний каскад К1804ВС1)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
           <mxGeometry x="-1780" y="-860" width="2330" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="bod-c0" value="DD1 К1804ВС1&amp;#xA;Секція [3:0]&amp;#xA;A[3:0], B[3:0], I[8:0], Cn&amp;#xA;F[3:0], Cn+4, RAM0, RAM3" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+        <mxCell id="bod-c0" value="&lt;b&gt;DD1 К1804ВС1&lt;/b&gt;&lt;br/&gt;Секція [3:0] | DIP-40&lt;br/&gt;VCC(1) GND(20) CP(19)&lt;br/&gt;/OE(18)→GND | Cn(21)&lt;br/&gt;A[3:0](2–5) | B[3:0](14–17)&lt;br/&gt;D[3:0](6–9) | I[8:0](22–30)&lt;br/&gt;RAM0(10) | Q0(12)&lt;br/&gt;RAM3(11) | Q3(13)&lt;br/&gt;Y[3:0](31–34) | F[3:0](35–38)&lt;br/&gt;OVR(39) | Cn+4(40)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=9;fontFamily=Times New Roman;verticalAlign=top;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
           <mxGeometry x="-1750" y="-200" width="220" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="bod-c1" value="DD2 К1804ВС1&amp;#xA;Секція [7:4]&amp;#xA;A[7:4], B[7:4], I[8:0], Cn&amp;#xA;F[7:4], Cn+4, RAM0, RAM3" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+        <mxCell id="bod-c1" value="&lt;b&gt;DD2 К1804ВС1&lt;/b&gt;&lt;br/&gt;Секція [7:4] | DIP-40&lt;br/&gt;VCC(1) GND(20) CP(19)&lt;br/&gt;/OE(18)→GND | Cn(21)&lt;br/&gt;A[7:4](2–5) | B[7:4](14–17)&lt;br/&gt;D[7:4](6–9) | I[8:0](22–30)&lt;br/&gt;RAM0(10) | Q0(12)&lt;br/&gt;RAM3(11) | Q3(13)&lt;br/&gt;Y[7:4](31–34) | F[7:4](35–38)&lt;br/&gt;OVR(39) | Cn+4(40)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=9;fontFamily=Times New Roman;verticalAlign=top;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
           <mxGeometry x="-1480" y="-200" width="220" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="bod-c2" value="DD3 К1804ВС1&amp;#xA;Секція [11:8]&amp;#xA;A[11:8], B[11:8], I[8:0], Cn&amp;#xA;F[11:8], Cn+4, RAM0, RAM3" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+        <mxCell id="bod-c2" value="&lt;b&gt;DD3 К1804ВС1&lt;/b&gt;&lt;br/&gt;Секція [11:8] | DIP-40&lt;br/&gt;VCC(1) GND(20) CP(19)&lt;br/&gt;/OE(18)→GND | Cn(21)&lt;br/&gt;A[11:8](2–5) | B[11:8](14–17)&lt;br/&gt;D[11:8](6–9) | I[8:0](22–30)&lt;br/&gt;RAM0(10) | Q0(12)&lt;br/&gt;RAM3(11) | Q3(13)&lt;br/&gt;Y[11:8](31–34) | F[11:8](35–38)&lt;br/&gt;OVR(39) | Cn+4(40)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=9;fontFamily=Times New Roman;verticalAlign=top;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
           <mxGeometry x="-1210" y="-200" width="220" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="bod-c3" value="DD4 К1804ВС1&amp;#xA;Секція [15:12]&amp;#xA;A[15:12], B[15:12], I[8:0], Cn&amp;#xA;F[15:12], Cn+4, RAM0, RAM3" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+        <mxCell id="bod-c3" value="&lt;b&gt;DD4 К1804ВС1&lt;/b&gt;&lt;br/&gt;Секція [15:12] | DIP-40&lt;br/&gt;VCC(1) GND(20) CP(19)&lt;br/&gt;/OE(18)→GND | Cn(21)&lt;br/&gt;A[15:12](2–5) | B[15:12](14–17)&lt;br/&gt;D[15:12](6–9) | I[8:0](22–30)&lt;br/&gt;RAM0(10) | Q0(12)&lt;br/&gt;RAM3(11) | Q3(13)&lt;br/&gt;Y[15:12](31–34) | F[15:12](35–38)&lt;br/&gt;OVR(39) | Cn+4(40)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=9;fontFamily=Times New Roman;verticalAlign=top;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
           <mxGeometry x="-940" y="-200" width="220" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="bod-c4" value="DD5 К1804ВС1&amp;#xA;Секція [19:16]&amp;#xA;A[19:16], B[19:16], I[8:0], Cn&amp;#xA;F[19:16], Cn+4, RAM0, RAM3" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+        <mxCell id="bod-c4" value="&lt;b&gt;DD5 К1804ВС1&lt;/b&gt;&lt;br/&gt;Секція [19:16] | DIP-40&lt;br/&gt;VCC(1) GND(20) CP(19)&lt;br/&gt;/OE(18)→GND | Cn(21)&lt;br/&gt;A[19:16](2–5) | B[19:16](14–17)&lt;br/&gt;D[19:16](6–9) | I[8:0](22–30)&lt;br/&gt;RAM0(10) | Q0(12)&lt;br/&gt;RAM3(11) | Q3(13)&lt;br/&gt;Y[19:16](31–34) | F[19:16](35–38)&lt;br/&gt;OVR(39) | Cn+4(40)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=9;fontFamily=Times New Roman;verticalAlign=top;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
           <mxGeometry x="-670" y="-200" width="220" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="bod-c5" value="DD6 К1804ВС1&amp;#xA;Секція [23:20]&amp;#xA;A[23:20], B[23:20], I[8:0], Cn&amp;#xA;F[23:20], Cn+4, RAM0, RAM3" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+        <mxCell id="bod-c5" value="&lt;b&gt;DD6 К1804ВС1&lt;/b&gt;&lt;br/&gt;Секція [23:20] | DIP-40&lt;br/&gt;VCC(1) GND(20) CP(19)&lt;br/&gt;/OE(18)→GND | Cn(21)&lt;br/&gt;A[23:20](2–5) | B[23:20](14–17)&lt;br/&gt;D[23:20](6–9) | I[8:0](22–30)&lt;br/&gt;RAM0(10) | Q0(12)&lt;br/&gt;RAM3(11) | Q3(13)&lt;br/&gt;Y[23:20](31–34) | F[23:20](35–38)&lt;br/&gt;OVR(39) | Cn+4(40)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=9;fontFamily=Times New Roman;verticalAlign=top;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
           <mxGeometry x="-400" y="-200" width="220" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="bod-c6" value="DD7 К1804ВС1&amp;#xA;Секція [27:24]&amp;#xA;A[27:24], B[27:24], I[8:0], Cn&amp;#xA;F[27:24], Cn+4, RAM0, RAM3" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+        <mxCell id="bod-c6" value="&lt;b&gt;DD7 К1804ВС1&lt;/b&gt;&lt;br/&gt;Секція [27:24] | DIP-40&lt;br/&gt;VCC(1) GND(20) CP(19)&lt;br/&gt;/OE(18)→GND | Cn(21)&lt;br/&gt;A[27:24](2–5) | B[27:24](14–17)&lt;br/&gt;D[27:24](6–9) | I[8:0](22–30)&lt;br/&gt;RAM0(10) | Q0(12)&lt;br/&gt;RAM3(11) | Q3(13)&lt;br/&gt;Y[27:24](31–34) | F[27:24](35–38)&lt;br/&gt;OVR(39) | Cn+4(40)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=9;fontFamily=Times New Roman;verticalAlign=top;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
           <mxGeometry x="-130" y="-200" width="220" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="bod-c7" value="DD8 К1804ВС1&amp;#xA;Секція [31:28]&amp;#xA;A[31:28], B[31:28], I[8:0], Cn&amp;#xA;F[31:28], Cn+4, RAM0, RAM3" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+        <mxCell id="bod-c7" value="&lt;b&gt;DD8 К1804ВС1&lt;/b&gt;&lt;br/&gt;Секція [31:28] | DIP-40&lt;br/&gt;VCC(1) GND(20) CP(19)&lt;br/&gt;/OE(18)→GND | Cn(21)&lt;br/&gt;A[31:28](2–5) | B[31:28](14–17)&lt;br/&gt;D[31:28](6–9) | I[8:0](22–30)&lt;br/&gt;RAM0(10) | Q0(12)&lt;br/&gt;RAM3(11) | Q3(13)&lt;br/&gt;Y[31:28](31–34) | F[31:28](35–38)&lt;br/&gt;OVR(39) | Cn+4(40)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=9;fontFamily=Times New Roman;verticalAlign=top;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
           <mxGeometry x="140" y="-200" width="220" height="180" as="geometry" />
         </mxCell>
         <mxCell id="bod-carry-line" value="Ланцюг переносу Cn → Cn+4 (послідовний)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;startArrow=none;strokeWidth=2;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
@@ -616,6 +616,213 @@
         </mxCell>
         <mxCell id="bod-legend" value="Позначення: /N — шина N біт; ► однонапрям.; ◄► двонапрям.; пунктир — зсувна шина RAM0/RAM3; Cn→Cn+4 — перенос. Оформлення згідно ЄСКД: ДСТУ ГОСТ 2.701, ДСТУ ГОСТ 2.702." style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
           <mxGeometry x="-1780" y="270" width="2330" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- ═══════════════════════════════════════════════════════════════════════ -->
+        <!-- ДЕТАЛІЗАЦІЯ: ЖИВЛЕННЯ, ТАКТУВАННЯ, D-ШИН, Q0/Q3-ЛАНЦЮГ, ОБВ'ЯЗКА    -->
+        <!-- ═══════════════════════════════════════════════════════════════════════ -->
+
+        <!-- ── Шина живлення +5В (VCC) ── -->
+        <mxCell id="bod-vcc-bus" value="+5В" style="edgeStyle=none;html=1;endArrow=none;startArrow=none;strokeWidth=3;strokeColor=#FF0000;fontColor=#FF0000;fontStyle=1;fontSize=12;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1960" y="-500" as="sourcePoint" />
+            <mxPoint x="520" y="-500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ── Шина землі (GND) ── -->
+        <mxCell id="bod-gnd-bus" value="GND" style="edgeStyle=none;html=1;endArrow=none;startArrow=none;strokeWidth=3;strokeColor=#000099;fontColor=#000099;fontStyle=1;fontSize=12;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1960" y="460" as="sourcePoint" />
+            <mxPoint x="520" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ── Шина тактового сигналу CLK (пін 19) ── -->
+        <mxCell id="bod-clk-bus" value="CLK (пін 19)" style="edgeStyle=none;html=1;endArrow=none;startArrow=classic;startFill=1;strokeWidth=2;strokeColor=#006600;fontColor=#006600;fontStyle=1;fontSize=11;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1960" y="-440" as="sourcePoint" />
+            <mxPoint x="520" y="-440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ── Шина прямого входу даних D[31:0] (піни 6–9) ── -->
+        <mxCell id="bod-d-bus" value="D[31:0] (прямий вхід, піни 6–9)" style="edgeStyle=none;html=1;endArrow=classic;endFill=1;startArrow=classic;startFill=1;strokeWidth=2;fontSize=11;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1960" y="-300" as="sourcePoint" />
+            <mxPoint x="520" y="-300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ── Q0 шина (зсувний ланцюг Q-регістру, мол. біт, пін 12) ── -->
+        <mxCell id="bod-q0-bus" value="Q0 (зсув Q-рег., мол. біт, пін 12)" style="edgeStyle=none;html=1;endArrow=open;startArrow=open;endFill=0;startFill=0;strokeWidth=2;dashed=1;dashPattern=8 4;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1760" y="355" as="sourcePoint" />
+            <mxPoint x="370" y="355" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ── Q3 шина (зсувний ланцюг Q-регістру, ст. біт, пін 13) ── -->
+        <mxCell id="bod-q3-bus" value="Q3 (зсув Q-рег., ст. біт, пін 13)" style="edgeStyle=none;html=1;endArrow=open;startArrow=open;endFill=0;startFill=0;strokeWidth=2;dashed=1;dashPattern=8 4;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1760" y="385" as="sourcePoint" />
+            <mxPoint x="370" y="385" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ── CLK відгалуження до DD1–DD8 (пін 19) ── -->
+        <mxCell id="bod-clk-tap0" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;strokeColor=#006600;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="-1700" y="-440" as="sourcePoint"/><mxPoint x="-1700" y="-200" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="bod-clk-tap1" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;strokeColor=#006600;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="-1430" y="-440" as="sourcePoint"/><mxPoint x="-1430" y="-200" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="bod-clk-tap2" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;strokeColor=#006600;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="-1160" y="-440" as="sourcePoint"/><mxPoint x="-1160" y="-200" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="bod-clk-tap3" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;strokeColor=#006600;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="-890" y="-440" as="sourcePoint"/><mxPoint x="-890" y="-200" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="bod-clk-tap4" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;strokeColor=#006600;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="-620" y="-440" as="sourcePoint"/><mxPoint x="-620" y="-200" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="bod-clk-tap5" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;strokeColor=#006600;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="-350" y="-440" as="sourcePoint"/><mxPoint x="-350" y="-200" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="bod-clk-tap6" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;strokeColor=#006600;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="-80" y="-440" as="sourcePoint"/><mxPoint x="-80" y="-200" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="bod-clk-tap7" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;strokeColor=#006600;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="190" y="-440" as="sourcePoint"/><mxPoint x="190" y="-200" as="targetPoint"/></mxGeometry>
+        </mxCell>
+
+        <!-- ── D відгалуження до DD1–DD8 (піни 6–9, /4 бр.) ── -->
+        <mxCell id="bod-d-tap0" value="/ 4" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=9;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="-1600" y="-300" as="sourcePoint"/><mxPoint x="-1600" y="-200" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="bod-d-tap1" value="/ 4" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=9;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="-1330" y="-300" as="sourcePoint"/><mxPoint x="-1330" y="-200" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="bod-d-tap2" value="/ 4" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=9;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="-1060" y="-300" as="sourcePoint"/><mxPoint x="-1060" y="-200" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="bod-d-tap3" value="/ 4" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=9;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="-790" y="-300" as="sourcePoint"/><mxPoint x="-790" y="-200" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="bod-d-tap4" value="/ 4" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=9;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="-520" y="-300" as="sourcePoint"/><mxPoint x="-520" y="-200" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="bod-d-tap5" value="/ 4" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=9;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="-250" y="-300" as="sourcePoint"/><mxPoint x="-250" y="-200" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="bod-d-tap6" value="/ 4" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=9;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="20" y="-300" as="sourcePoint"/><mxPoint x="20" y="-200" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="bod-d-tap7" value="/ 4" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;fontSize=9;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="290" y="-300" as="sourcePoint"/><mxPoint x="290" y="-200" as="targetPoint"/></mxGeometry>
+        </mxCell>
+
+        <!-- ── Q0 відгалуження від DD1–DD8 (пін 12) ── -->
+        <mxCell id="bod-q0-tap0" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;endFill=0;dashed=1;dashPattern=8 4;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="-1670" y="-20" as="sourcePoint"/><mxPoint x="-1670" y="355" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="bod-q0-tap1" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;endFill=0;dashed=1;dashPattern=8 4;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="-1400" y="-20" as="sourcePoint"/><mxPoint x="-1400" y="355" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="bod-q0-tap2" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;endFill=0;dashed=1;dashPattern=8 4;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="-1130" y="-20" as="sourcePoint"/><mxPoint x="-1130" y="355" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="bod-q0-tap3" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;endFill=0;dashed=1;dashPattern=8 4;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="-860" y="-20" as="sourcePoint"/><mxPoint x="-860" y="355" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="bod-q0-tap4" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;endFill=0;dashed=1;dashPattern=8 4;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="-590" y="-20" as="sourcePoint"/><mxPoint x="-590" y="355" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="bod-q0-tap5" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;endFill=0;dashed=1;dashPattern=8 4;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="-320" y="-20" as="sourcePoint"/><mxPoint x="-320" y="355" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="bod-q0-tap6" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;endFill=0;dashed=1;dashPattern=8 4;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="-50" y="-20" as="sourcePoint"/><mxPoint x="-50" y="355" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="bod-q0-tap7" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;endFill=0;dashed=1;dashPattern=8 4;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="220" y="-20" as="sourcePoint"/><mxPoint x="220" y="355" as="targetPoint"/></mxGeometry>
+        </mxCell>
+
+        <!-- ── Q3 відгалуження від DD1–DD8 (пін 13) ── -->
+        <mxCell id="bod-q3-tap0" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;endFill=0;dashed=1;dashPattern=8 4;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="-1650" y="-20" as="sourcePoint"/><mxPoint x="-1650" y="385" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="bod-q3-tap1" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;endFill=0;dashed=1;dashPattern=8 4;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="-1380" y="-20" as="sourcePoint"/><mxPoint x="-1380" y="385" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="bod-q3-tap2" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;endFill=0;dashed=1;dashPattern=8 4;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="-1110" y="-20" as="sourcePoint"/><mxPoint x="-1110" y="385" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="bod-q3-tap3" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;endFill=0;dashed=1;dashPattern=8 4;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="-840" y="-20" as="sourcePoint"/><mxPoint x="-840" y="385" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="bod-q3-tap4" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;endFill=0;dashed=1;dashPattern=8 4;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="-570" y="-20" as="sourcePoint"/><mxPoint x="-570" y="385" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="bod-q3-tap5" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;endFill=0;dashed=1;dashPattern=8 4;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="-300" y="-20" as="sourcePoint"/><mxPoint x="-300" y="385" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="bod-q3-tap6" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;endFill=0;dashed=1;dashPattern=8 4;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="-30" y="-20" as="sourcePoint"/><mxPoint x="-30" y="385" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="bod-q3-tap7" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;endFill=0;dashed=1;dashPattern=8 4;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="240" y="-20" as="sourcePoint"/><mxPoint x="240" y="385" as="targetPoint"/></mxGeometry>
+        </mxCell>
+
+        <!-- ── Q0_IN / Q3_OUT — зовнішні підключення зсувного ланцюга ── -->
+        <mxCell id="bod-q0-ext" value="Q0_IN&#xA;(зс. вліво)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=9;fontFamily=Times New Roman;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry x="-1870" y="340" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="bod-q3-ext" value="Q3_OUT&#xA;(зс. вправо)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=9;fontFamily=Times New Roman;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry x="390" y="340" width="110" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- ── Вихід OVR (переповнення, пін 39 DD8) ── -->
+        <mxCell id="bod-ovr-out" value="OVR&#xA;(пін 39, DD8)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=9;fontFamily=Times New Roman;fillColor=#ffe6cc;strokeColor=#d6b656;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry x="390" y="-130" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="bod-ovr-wire" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="-105" as="sourcePoint" />
+            <mxPoint x="390" y="-105" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ── Cn (вхід переносу, пін 21 DD1) ── -->
+        <mxCell id="bod-cin-in" value="C0&#xA;(Cin, пін 21&#xA;DD1)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=9;fontFamily=Times New Roman;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry x="-1870" y="-130" width="100" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- ── Роз'єм живлення XP1 ── -->
+        <mxCell id="bod-xp1" value="XP1&#xA;1: +5В&#xA;2: GND&#xA;Роз'єм живлення" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=9;fontFamily=Times New Roman;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry x="-1960" y="-560" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="bod-xp1-vcc" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=none;strokeColor=#FF0000;strokeWidth=2;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1895" y="-500" as="sourcePoint" />
+            <mxPoint x="-1895" y="-490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bod-xp1-gnd" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=none;strokeColor=#000099;strokeWidth=2;" edge="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1870" y="460" as="sourcePoint" />
+            <mxPoint x="-1870" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ── Блокуючі конденсатори C1–C8 та груповий C9 (анотація) ── -->
+        <mxCell id="bod-cap-note" value="&lt;b&gt;Блокуючі конденсатори:&lt;/b&gt;&lt;br/&gt;C1–C8: 100 нФ, керам. X7R, 0805&lt;br/&gt;  Встановлюються між VCC(1) та GND(20)&lt;br/&gt;  кожної МС DD1–DD8 якнайближче.&lt;br/&gt;  Розрахунок: f_antires = 1/(2pi·sqrt(L·C)),&lt;br/&gt;  L=10 нГн, C=100 нФ → f ≈ 5 МГц &gt; f_CLK&lt;br/&gt;C9: 10 мкФ / 16 В, електролітичний&lt;br/&gt;  Груповий (на вводі +5В шини XP1).&lt;br/&gt;&lt;b&gt;/OE (пін 18):&lt;/b&gt;&lt;br/&gt;  Підключено до GND через 0 Ом (R1–R8)&lt;br/&gt;  → виходи F/Y завжди активні." style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;strokeWidth=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=9;fontFamily=Times New Roman;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry x="430" y="-510" width="320" height="220" as="geometry" />
+        </mxCell>
+
+        <!-- ── Оновлена легенда сигналів ── -->
+        <mxCell id="bod-legend2" value="Нові сигнали: ─── +5В (VCC, червона шина); ─── GND (синя шина); ─── CLK/зелена (пін 19); ─── D[31:0] (прям. вхід, піни 6–9); ─ ─ Q0 (пін 12) / Q3 (пін 13) — зсувний ланцюг Q-регістру (дзеркально RAM0/RAM3). /OE(18) усіх DD1–DD8 → GND (виходи F/Y активні постійно). C1–C8=100 нФ (на VCC-GND кожної МС), C9=10 мкФ (вхідний). ЄСКД: ДСТУ ГОСТ 2.701, 2.702." style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+          <mxGeometry x="-1780" y="340" width="2200" height="55" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
