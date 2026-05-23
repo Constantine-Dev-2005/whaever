@@ -614,7 +614,7 @@
             <mxPoint x="330" y="210" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="bod-legend" value="Позначення: /N — шина N біт; ► однонапрям.; ◄► двонапрям.; пунктир — зсувна шина RAM0/RAM3; Cn→Cn+4 — перенос. Оформлення згідно ЄСКД: ДСТУ ГОСТ 2.701:2006, ДСТУ ГОСТ 2.702:2013." style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+        <mxCell id="bod-legend" value="Позначення: /N — шина N біт; ► однонапрям.; ◄► двонапрям.; пунктир — зсувна шина RAM0/RAM3; Cn→Cn+4 — перенос. Оформлення згідно ЄСКД: ДСТУ ГОСТ 2.701, ДСТУ ГОСТ 2.702." style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
           <mxGeometry x="-1780" y="270" width="2330" height="60" as="geometry" />
         </mxCell>
       </root>

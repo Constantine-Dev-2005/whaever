@@ -284,7 +284,7 @@
         <mxCell id="bmu-fam-ctr" value="CT" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;startArrow=none;startFill=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="bmu-fam" target="bmu-ctr" parent="rYKlLN2ti9XnYYLPjGYp-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="bmu-legend" value="Позначення: /N — шина N біт; ◄► двоспрям.; ► однонапрям. Оформлення згідно ЄСКД: ДСТУ ГОСТ 2.701:2006, ДСТУ ГОСТ 2.702:2013." style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+        <mxCell id="bmu-legend" value="Позначення: /N — шина N біт; ◄► двоспрям.; ► однонапрям. Оформлення згідно ЄСКД: ДСТУ ГОСТ 2.701, ДСТУ ГОСТ 2.702." style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
           <mxGeometry x="-1780" y="230" width="2330" height="40" as="geometry" />
         </mxCell>
       </root>

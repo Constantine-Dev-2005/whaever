@@ -236,7 +236,7 @@
               <mxCell id="mem-ttl" value="КП. Схема електрична принципова (контролер пам'яті ОЗП/ПЗП)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
           <mxGeometry x="-1780" y="-860" width="2330" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="mem-cpu" value="МП КВ-32&amp;#xA;A[15:0], D[31:0]&amp;#xA;MREQ#, RD#, WR#" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+        <mxCell id="mem-cpu" value="Процесор КВ-32&amp;#xA;A[15:0], D[31:0]&amp;#xA;MREQ#, RD#, WR#" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
           <mxGeometry x="-1700" y="-500" width="280" height="160" as="geometry" />
         </mxCell>
         <mxCell id="mem-dec" value="DD1 К1533ИД7&amp;#xA;Дешифратор адреси 3→8&amp;#xA;Входи: A15..A13, G&amp;#xA;Виходи: CS0..CS3 (активні 0)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
@@ -308,7 +308,7 @@
         <mxCell id="mem-rom2-dbus" value="/ 16 D[31:16]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;startArrow=classic;startFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.7;entryY=0;entryDx=0;entryDy=0;" edge="1" source="mem-rom2" target="mem-dbus" parent="rYKlLN2ti9XnYYLPjGYp-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="mem-legend" value="Елементна база: К537РУ8 (SRAM 2К×8), К596РЕ1 (ROM 8К×8), К1533ИД7 (дешифратор 3→8). Оформлення та позначення за ДСТУ ГОСТ 2.701:2006, ДСТУ ГОСТ 2.702:2013." style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
+        <mxCell id="mem-legend" value="Елементна база: К537РУ8 (SRAM 2К×8), К596РЕ1 (ROM 8К×8), К1533ИД7 (дешифратор 3→8). Оформлення та позначення за ДСТУ ГОСТ 2.701, ДСТУ ГОСТ 2.702." style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="rYKlLN2ti9XnYYLPjGYp-1">
           <mxGeometry x="-1780" y="210" width="2330" height="40" as="geometry" />
         </mxCell>
       </root>
